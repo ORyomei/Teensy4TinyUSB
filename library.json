@@ -1,0 +1,18 @@
+{
+  "name": "Teensy4TinyUSB",
+  "version": "0.1.0",
+  "description": "TinyUSB device stack for Teensy 4.0 / 4.1 / MicroMod on the Arduino framework: USB Mass Storage (e.g. the SD card as a USB drive) and CDC serial. Replaces the Teensy core's USB; build with -DUSB_DISABLED.",
+  "keywords": ["usb", "tinyusb", "teensy", "teensy4", "imxrt", "mass storage", "msc", "cdc", "serial"],
+  "repository": { "type": "git", "url": "https://github.com/ORyomei/Teensy4TinyUSB.git" },
+  "authors": [{ "name": "Ryomei Osaki" }],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "teensy",
+  "headers": "Teensy4TinyUSB.h",
+  "export": { "exclude": [".gitignore"] },
+  "build": {
+    "flags": ["-Isrc/tinyusb"],
+    "libArchive": false,
+    "extraScript": "extra_script.py"
+  }
+}
