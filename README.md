@@ -1,5 +1,7 @@
 # Teensy4TinyUSB
 
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/oryomei/library/Teensy4TinyUSB.svg)](https://registry.platformio.org/libraries/oryomei/Teensy4TinyUSB)
+
 [TinyUSB](https://github.com/hathach/tinyusb) device stack for **Teensy 4.0 / 4.1 / MicroMod** (i.MX RT1062) on the
 Arduino framework, built with PlatformIO. It gives you what the Teensy core does not have:
 
@@ -27,7 +29,7 @@ the core keeps working.
 platform = teensy
 board = teensy41
 framework = arduino
-lib_deps = Teensy4TinyUSB          ; or the git URL, or lib_extra_dirs pointing at a checkout
+lib_deps = oryomei/Teensy4TinyUSB@^0.1.0   ; from the PlatformIO Registry
 build_flags = -DUSB_DISABLED
 ```
 
